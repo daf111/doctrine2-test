@@ -1,0 +1,13 @@
+<!-- config/xml/Product.dcm.xml -->
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Order" table="orders">
+        <id name="id" type="order_id" column="id" length="36" />
+        <embedded name="product_id" class="OrderProductId" use-column-prefix="false" />
+        <embedded name="name" class="ProductName" use-column-prefix="false" />
+        
+    </entity>
+</doctrine-mapping>
