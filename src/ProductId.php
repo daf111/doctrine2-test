@@ -1,7 +1,7 @@
 <?php
 // src/ProductId.php
 
-final class ProductId
+class ProductId
 {
     protected $value;
 
