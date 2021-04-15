@@ -5,10 +5,7 @@
                           https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
     <entity name="Category" table="categories">
-        <id name="id" type="integer">
-            <generator strategy="AUTO" />
-        </id>
-
-        <field name="name" type="text" />
+        <id name="id" type="category_id" column="id" length="36" />
+        <embedded name="name" class="CategoryName" use-column-prefix="false" />
     </entity>
 </doctrine-mapping>

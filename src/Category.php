@@ -3,8 +3,8 @@
 
 class Category
 {
-    protected $id;
-    protected $name;
+    protected CategoryId $id;
+    protected CategoryName $name;
     
     public function getId()
     {

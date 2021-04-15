@@ -1,10 +1,10 @@
 <?php
 // src/Product.php
 
-class Product
+final class Product
 {
     protected ProductId $id;
-    protected $name;
+    protected ProductName $name;
     protected $categories;
 
     public function setId($id)

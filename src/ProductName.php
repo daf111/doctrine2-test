@@ -1,9 +1,7 @@
 <?php
-// src/ProductId.php
 
-final class ProductId
-{
-    protected $value;
+final class ProductName {
+    private $value;
 
     public function __construct($value)
     {

@@ -10,4 +10,4 @@ if ($product === null) {
     exit(1);
 }
 
-echo print_r($product->getCategory()[2]->getName());
+echo print_r($product->getCategory()[1]->getName());

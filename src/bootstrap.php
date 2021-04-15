@@ -19,6 +19,7 @@ $config = Setup::createXMLMetadataConfiguration(array(__DIR__."/../config/xml-en
 
 // Register my type
 Type::addType('product_id', 'ProductIdType');
+Type::addType('category_id', 'CategoryIdType');
 
 
 // database configuration parameters

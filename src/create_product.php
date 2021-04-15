@@ -9,10 +9,10 @@ $categoryIds = explode(",", $argv[3]);
 
 $product = new Product();
 $product->setId(new ProductId($newProductId));
-$product->setName($newProductName);
+$product->setName(new ProductName($newProductName));
 
 foreach ($categoryIds as $categoryId) {
-    $category = $entityManager->find("Category", $categoryId);
+    $category = $entityManager->find("Category", new CategoryId($categoryId));
     $product->assignToCategory($category);
 }
 
