@@ -4,8 +4,8 @@
 final class Order
 {
     protected OrderId $id;
-    protected OrderProductId $product_id;
-    private ProductName $name;
+    protected ProductId $product_id;
+    protected ProductName $name;
 
     public function setProductId($product_id)
     {
